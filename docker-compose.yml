@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  extension:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: npm start
+    ports:
+      - "1779:1779"
+    volumes:
+      - .:/usr/extension
