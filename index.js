@@ -13,10 +13,10 @@ const bodyParser = require('body-parser');
 const PORT = 1779;
 const HOST = '0.0.0.0';
 
-
 extension.get('/', (req, res) =>{
    res.sendFile(path.join(__dirname, './layout/index.html'));
 });
+
 console.log('Server running\n');
 
 extension.listen(PORT, HOST);
